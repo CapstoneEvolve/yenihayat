@@ -1,3 +1,71 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333; /* Dark background color for the header */
+    color: white;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+/* Navbar Styles */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Navbar Links */
+.navbar a:hover {
+    color: #ff6347; /* Change color on hover (tomato color) */
+}
+
+/* CTA Button Styles */
+.cta-button .cta-link {
+    background-color: #ff6347; /* Tomato color for the button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for CTA Button */
+.cta-button .cta-link:hover {
+    background-color: #e55347; /* Darken the button color on hover */
+}
+
+
+
+
+
+
+
+
+
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 576px) {
     body {
