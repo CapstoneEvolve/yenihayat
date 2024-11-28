@@ -19,5 +19,3 @@ nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slides.length;
   updateSlide(currentIndex);
 });
-
-updateSlide(currentIndex);
