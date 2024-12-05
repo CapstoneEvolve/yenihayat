@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 576px) {
     body {
