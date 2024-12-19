@@ -3,146 +3,199 @@
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateX(-500px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0px);
     }
 }
 
 body {
     margin: 0;
-    background-color: black;
     font-family: "poppins";
 }
 
 .hero-container {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .hero-slides {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slides[style*="display: block"] {
+    opacity: 1;
 }
 
 .hero-slides::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.949) 0%, rgba(0, 0, 0, 0.896) 20%, transparent 100%);
     z-index: 9;
 }
 
 .hero-slides img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
+    display: block;
 }
 
 .img-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    z-index: 11;
+    top: 0;
+    left: 3%;
+    right: 0;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-start;   
+    padding: 10px;
     color: white;
     font-weight: 600;
-}
-
-.img-overlay p {
-    font-size: 2.5rem;
-}
-
-.img-overlay h2 {
-    font-size: 3rem;
-    color: #9b1818;
+    z-index: 11; 
+    gap: 8%;
 }
 
 .img-overlay a {
+    background-color: white;
+    color: black;
     text-decoration: none;
-    background-color: #9b1818;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    display: inline-block;
-    margin-top: 2rem;
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 12;
+    transition: background-color 0.3s ease;
+    margin-bottom: -20px;
 }
 
-.img-overlay a:hover {
-    background: #5b0d0d;
+.slider-controls button {
+    background-color: rgb(166, 44, 44);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 50px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 22px;
+    color: black;   
+    border-radius: 5px;
 }
 
-.btn {
-    background-color: transparent;
-    padding: 1rem;
-    color: white;
-    border-radius: 10px;
+.slider-controls button:hover {
+    background-color: #691111;
 }
 
-.btn::after {
-    color: #fff;
+.img-overlay h2 {
+    font-size: 2.3em;
+    margin-bottom: -30px;
 }
 
-.swiper-button-next {
-    margin-right: 5%;
-}
-
-.swiper-button-prev {
-    margin-left: 5%;
-}
-
-.swiper-pagination {
-    color: white;
-}
-
-.swiper-button-prev, .swiper-button-next {
-    padding: 10px ; 
+.img-overlay h3 {
+    font-size: 2.3em;
+    margin-top: -25px;
+    margin-bottom: -30px; 
+    color: rgb(166, 44, 44);
 }
 
 .img-overlay p, .img-overlay h2, .img-overlay h3, .img-overlay a {
     opacity: 0;
     transform: translateY(20px);
-    animation: slideIn 2s ease-out forwards;
-}
-
-.img-overlay p {
-    animation-delay: 0.5s;
+    animation: slideIn 1s ease-out forwards;
 }
 
 .img-overlay h2 {
-    animation-delay: 0.75s;
+    animation-delay: 0.30s;
 }
 
 .img-overlay h3 {
-    animation-delay: 1s;
+    animation-delay: 0.40s;
 }
 
 .img-overlay a {
-    animation-delay: 1.25s;
+    animation-delay: 0.50s;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 15;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: white;
+    transform: scale(1.2);
 }
 
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 576px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
 
-    .img-overlay p {
-        font-size: 2rem;
+    .hero-slides::before {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.949) 0%, rgba(0, 0, 0, 0.896) 30%, transparent 100%);
     }
-    
+
+    .img-overlay {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
     .img-overlay h2 {
-        font-size: 1.5rem;
+        font-size: 2.3em;
     }
 
-    .btn {
-        visibility: hidden;
+    .img-overlay h3 {
+        font-size: 1.7em;
+    }
+
+    .img-overlay a {
+        font-size: 1em; /* Optional: Adjust size for smaller screens */
+        margin-bottom: -60px;
+    }
+
+    .slider-controls button {
+        margin-bottom: -70%;
     }
 }
 
@@ -152,16 +205,39 @@ body {
         font-size: 16px;
     }
 
-    .img-overlay p {
-        font-size: 1.6rem;
-    }
-    
-    .img-overlay h2 {
-        font-size: 1.5rem;
+    .hero-slides::before {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.949) 0%, rgba(0, 0, 0, 0.896) 30%, transparent 100%);
     }
 
-    .btn {
-        visibility: hidden;
+    .img-overlay {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .img-overlay h2 {
+        font-size: 2.3em;
+    }
+
+    .img-overlay h3 {
+        font-size: 1.7em;
+    }
+
+    .img-overlay a {
+        font-size: 1em; /* Optional: Adjust size for smaller screens */
+        margin-bottom: -60px;
+    }
+
+    .slider-controls button {
+        margin-bottom: -70%;
     }
 }
 
@@ -170,18 +246,6 @@ body {
     body {
         font-size: 18px;
     }
-
-    .img-overlay p {
-        font-size: 2rem;
-    }
-    
-    .img-overlay h2 {
-        font-size: 2rem;
-    }
-
-    .swiper-pagination {
-        visibility: hidden;
-    }
 }
 
 /* Large devices (desktops) */
@@ -189,23 +253,11 @@ body {
     body {
         font-size: 20px;
     }
-
-    .swiper-pagination {
-        visibility: hidden;
-    }
-
-    .img-overlay h2 {
-        font-size: 2.5rem;
-    }
 }
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
-    }
-
-    .swiper-pagination {
-        visibility: hidden;
     }
 }
