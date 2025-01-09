@@ -1,0 +1,158 @@
+/* Activities page */
+body {
+    background-color: #f1f1f1;
+}
+
+.activites_header {
+    background-image: url('/images/activities-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.activites_header h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.activites_row {
+    width: 100%;
+}
+
+.activites_card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 10px;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.activites_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activites_title {
+    text-align: center;
+    color: #333;
+}
+
+.activites_card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Extra small devices (phones, portrait mode) */
+@media (max-width: 576px) {
+    .activites_row {
+      flex-direction: column; 
+    }
+  
+    .activites_card {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .activities_img img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+/* Small devices (phones, landscape mode, small tablets) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .activites_row {
+      flex-direction: column; 
+    }
+  
+    .activites_card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .activities_img img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .activites_row {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .activites_card {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  
+    .activities_img img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .activites_row {
+      flex-direction: row; 
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .activites_card {
+      width: 45%; 
+      margin-bottom: 20px;
+    }
+  
+    .activities_img img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
+  /* Extra large devices (large desktops) */
+  @media (min-width: 1200px) {
+    .activites_row {
+      flex-direction: row; 
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .activites_card {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  
+    .activities_img img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+  
