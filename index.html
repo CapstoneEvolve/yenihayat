@@ -3,34 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    
+    <!-- Header Section -->
     <header>
-        <!-- Logo Section -->
         <div class="logo">
-            <img src="logo.png" alt="Company Logo"> 
+            <a href="/index.html">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
         </div>
-
-        <!-- Navbar Section -->
         <nav class="navbar">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown slide">
+                    <a href="#" class="dropbtn">Activities</a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-link" href="#activity1">Link 1</a>
+                        <a class="dropdown-link" href="#activity2">Link 2</a>
+                        <a class="dropdown-link" href="#activity3">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
-
-        <!-- CTA Button -->
-        <div class="cta-button">
-            <a href="#cta" class="cta-link">Get Started</a>
-        </div>
     </header>
 
-    <script src="main.js"></script>
+    <section class="contact_us">
+        <div class="contain">
+            <div class="wrapper">
+          
+              <div class="form">
+                <h4>GET IN TOUCH <i class="fa-solid fa-envelope"></i> </h4>
+                <h2 class="form-headline">Send us a message</h2>
+                <form id="submit-form" action="">
+                  <p>
+                    <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p>
+                    <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p class="full-width">
+                    <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
+                  </p>
+                  <p class="full-width">
+                    <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                    <button class="reset-btn" onclick="reset()">Reset</button>
+                  </p>
+                </form>
+              </div>
+          
+              <div class="contacts contact-wrapper">
+          
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, exercitationem. Eum soluta non quibusdam harum ad suscipit impedit neque eveniet enim illum! Nihil aperiam iure minus voluptatum autem porro voluptatem.
+                  </li>
+                  <span class="hightlight-contact-info">
+                    <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+                  </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
