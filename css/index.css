@@ -10,7 +10,7 @@
 .highlights_sections {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);  
-  padding: 38px;  
+  padding: 20px;  
   margin: 15px;
   background-color: rgba(47, 79, 79, 0.6); 
   width: 100%; 
@@ -82,6 +82,22 @@
     width: 85%;
     margin: 10px;
   }
+  .activities_container {
+    flex-direction: column;
+    width: 99%;
+  }
+
+  .activities-text {
+    padding: 20px;
+  }
+  
+  .activities_img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .activities_img {
+    margin-right: 0px;
+  }
 }
 
 /* Small devices (phones, landscape mode, small tablets) */
@@ -98,6 +114,22 @@
     width: 85%; 
     margin: 10px; 
   }
+  .activities_container {
+    flex-direction: column;
+    width: 99%;
+  }
+
+  .activities-text {
+    padding: 20px;
+  }
+  
+  .activities_img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .activities_img {
+    margin-right: 0px;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -113,6 +145,22 @@
   .highlights_sections { 
     width: 35%;
     margin: 10px; 
+  }
+  .activities_container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .activities-text {
+    padding: 20px;
+  }
+  
+  .activities_img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .activities_img {
+    margin-right: 0px;
   }
 }
 
