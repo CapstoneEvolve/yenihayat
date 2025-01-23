@@ -9,86 +9,86 @@
 </head>
 
 <body>
-    <!-- Header Section -->
+
     <header>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li class="dropdown slide">
-                    <a href="#" class="dropbtn">Activities</a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-link" href="#activity1">Link 1</a>
-                        <a class="dropdown-link" href="#activity2">Link 2</a>
-                        <a class="dropdown-link" href="#activity3">Link 3</a>
-                    </div>
-                </li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
+
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/images/logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="dropdown slide">
+              <a href="#" class="dropbtn">Activities</a>
+              <div class="dropdown-content">
+                  <a class="dropdown-link" href="#activity1">Link 1</a>
+                  <a class="dropdown-link" href="#activity2">Link 2</a>
+                  <a class="dropdown-link" href="#activity3">Link 3</a>
+              </div>
+          </li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
 
     <section class="contact_us">
-        <div class="contain">
-            <div class="wrapper">
-          
-              <div class="form">
-                <h4>GET IN TOUCH <i class="fa-solid fa-envelope"></i> </h4>
-                <h2 class="form-headline">Send us a message</h2>
-                <form id="submit-form" action="">
-                  <p>
-                    <input id="name" class="form-input" type="text" placeholder="Your Name*">
-                    <small class="name-error"></small>
-                  </p>
-                  <p>
-                    <input id="email" class="form-input" type="email" placeholder="Your Email*">
-                    <small class="name-error"></small>
-                  </p>
-                  <p class="full-width">
-                    <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
-                    <small></small>
-                  </p>
-                  <p class="full-width">
-                    <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
-                    <small></small>
-                  </p>
-                  <p class="full-width">
-                    <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
-                  </p>
-                  <p class="full-width">
-                    <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
-                    <button class="reset-btn" onclick="reset()">Reset</button>
-                  </p>
-                </form>
-              </div>
-          
-              <div class="contacts contact-wrapper">
-          
-                <ul>
+      <div class="contain">
+          <div class="wrapper">
+        
+            <div class="form">
+              <h4>Contact Us<i class="fa-solid fa-envelope"></i> </h4>
+              <form id="submit-form" action="">
+                <p>
+                  <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                  <small class="name-error"></small>
+                </p>
+                <p>
+                  <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                  <small class="name-error"></small>
+                </p>
+                <p class="full-width">
+                  <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                  <small></small>
+                </p>
+                <p class="full-width">
+                  <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                </p>
+              </form>
+            </div>
+        
+            <div class="contacts contact-wrapper">
+
+              <ul>
+                <h4>📍Address:</h4>
                   <li>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, exercitationem. Eum soluta non quibusdam harum ad suscipit impedit neque eveniet enim illum! Nihil aperiam iure minus voluptatum autem porro voluptatem.
                   </li>
-                  <span class="hightlight-contact-info">
-                    <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
-                  </span>
-                </ul>
-              </div>
+                  <p>
+                    <strong>Your Business Name</strong><br>
+                    123 Main Street, Suite 456<br>
+                    City, State, ZIP Code
+                </p>
+               
+                <span class="hightlight-contact-info">
+                  <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
+                  <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+                </span>
+              </ul>
             </div>
           </div>
-    </section>
+        </div>
+  </section>
 
     <script src="js/main.js"></script>
 </body>
