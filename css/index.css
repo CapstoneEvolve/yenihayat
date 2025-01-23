@@ -54,6 +54,10 @@
   margin-bottom: 27px;
 }
 
+.highlight_button {
+  margin-bottom: 15px;
+}
+
 .highlight_button a {
   width: 20%;
   padding: 15px;
