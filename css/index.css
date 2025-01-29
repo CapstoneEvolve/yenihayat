@@ -117,7 +117,6 @@ header {
 }
 
 .contact_us {
-  background: #f9f9f9;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
@@ -141,7 +140,8 @@ header {
 }
 
 .form {
-  background: #ffffff;
+  background: whitesmoke;
+  border: 1px solid rgb(219, 216, 216);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -160,24 +160,18 @@ header {
   margin-bottom: 20px;
 }
 
-.form-input {
-  width: 80%;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-}
-
 .form-input:focus {
   outline: none;
   border-color: #3f3d3d;
 }
 
-textarea {
+.form-input, textarea {
   width: 100%;
-  resize: none;
-  font-family: inherit;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .full-width {
@@ -219,12 +213,23 @@ textarea {
 }
 
 .contacts, contact-wrapper {
-  background-color: #ffffff;
+  background: whitesmoke;
+  padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .contacts ,contact-wrapper, h2 {
   color: red;
   font-size: 1.275em;
+}
+
+h4 {
+  display: flex;
+  align-items: center;
+}
+
+h4 i {
+  order: -1;
+  margin-right: 8px;
 }
 
 /* Responsive Styles */
@@ -331,6 +336,16 @@ textarea {
   margin-left: auto;
 } 
 
+h4 {
+  display: flex;
+  align-items: center;
+}
+
+h4 i {
+  order: -1;
+  margin-right: 8px; /* Adjust spacing */
+}
+
 .logo img {
   display: flex;
   
@@ -357,6 +372,16 @@ body {
 
   body {
     font-size: 0.875em;  
+  }
+
+  h4 {
+    display: flex;
+    align-items: center;
+  }
+
+  h4 i {
+    order: -1;
+    margin-right: 8px; /* Adjust spacing */
   }
 
   header {
