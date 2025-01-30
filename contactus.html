@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+<body>
+  <!-- 1. first way with emailJS using JS -->
+
+  <!-- <div class="form-container">
+    <form id="contact-form">
+      <h2>Contact Us</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" onclick="sendMail(event)">Send</button>
+    </form>
+  </div> -->
+
+
+
+  <!-- 2. second way with FormSubmit with HTML-->
+
+<!-- <div class="form-container">
+  <form action="https://formsubmit.co/shpetimhalidi390@gmail.com" method="POST">
+    <h2>Contact Us</h2>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit">Send</button>
+  </form>
+</div> -->
+
+
+<!-- 3. Third way with Google apps Script -->
+
+<!-- <div class="form-container">
+<form id="contact-form">
+  <h2>Contact Us</h2>
+  
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+  </div>
+  
+  <button type="submit">Send</button>
+</form>
+</div>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbzwXDtLOnd4VdYGnN4HJvg358i2jx7xJ5KE-K_w0INQaP5rB4G7MvSLDB8d5AK2RSirMA/exec", { 
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    })
+    .catch(error => alert("Error sending message: " + error));
+  });
+</script> -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

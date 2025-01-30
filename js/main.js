@@ -86,3 +86,52 @@ document.querySelector('.hero-container').addEventListener('touchend', (event) =
         resetAutoSlide();
     }
 });
+
+
+
+
+// first way
+
+// (function() {
+//     emailjs.init("YMC-Yh8IX8vBeyb_e"); // Replace with your EmailJS Public Key
+//   })();
+
+//   function sendMail(event) {
+//     event.preventDefault(); // Prevent default form submission
+
+//     let params = {
+//       name: document.getElementById("name").value,
+//       email: document.getElementById("email").value,
+//       message: document.getElementById("message").value
+//     };
+
+//     emailjs.send("service_dtl756r", "template_1abqjig", params)
+//       .then(function(response) {
+//         alert("Email sent successfully!");
+//         document.getElementById("contact-form").reset(); // Clear form after sending
+//       }, function(error) {
+//         alert("Failed to send email: " + error.text);
+//       });
+//   }
+
+
+
+//third way
+
+// document.getElementById("contact-form").addEventListener("submit", function(event) {
+//     event.preventDefault(); // Prevent default form submission
+
+//     let formData = new FormData(this);
+
+//     fetch("https://script.google.com/macros/s/AKfycbzwXDtLOnd4VdYGnN4HJvg358i2jx7xJ5KE-K_w0INQaP5rB4G7MvSLDB8d5AK2RSirMA/exec", { // Replace with your actual URL
+//       method: "POST",
+//       body: formData
+//     })
+//     .then(response => response.text())
+//     .then(data => {
+//       alert("Message sent successfully!");
+//       document.getElementById("contact-form").reset();
+//     })
+//     .catch(error => alert("Error sending message: " + error));
+//   });
+
