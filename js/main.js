@@ -4,11 +4,11 @@ function toggleMenu() {
   navLinks.classList.toggle('expanded');
 }
 document.addEventListener("DOMContentLoaded", function () {
-  // Dropdown menü açıldığında, herhangi bir linke otomatik odaklanmasını engelle
+
   const dropdownContent = document.querySelector(".dropdown-content");
   
   dropdownContent.addEventListener("click", function (event) {
-      event.preventDefault();  // Linke otomatik odaklanmayı engelle
+      event.preventDefault();
     });
 });
 
