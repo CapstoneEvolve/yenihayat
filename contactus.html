@@ -50,7 +50,7 @@
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" required></textarea>
     </div>
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    <input type="hidden" name="_next" value="http://127.0.0.1:3000/contactus.html">
     <input type="hidden" name="_captcha" value="false">
     <button type="submit">Send</button>
   </form>
@@ -59,7 +59,7 @@
 
 <!-- 3. Third way with Google apps Script -->
 
-<!-- <div class="form-container">
+<div class="form-container">
 <form id="contact-form">
   <h2>Contact Us</h2>
   
@@ -78,6 +78,10 @@
     <textarea id="message" name="message" rows="4" required></textarea>
   </div>
   
+
+  <div class="form-group">
+    <label id="test" name="test">This is the test content</label>
+  </div>
   <button type="submit">Send</button>
 </form>
 </div>
@@ -94,11 +98,12 @@
     .then(response => response.text())
     .then(data => {
       alert("Message sent successfully!");
+      //instead of the alert display the message using a modale
       document.getElementById("contact-form").reset();
     })
     .catch(error => alert("Error sending message: " + error));
   });
-</script> -->
+</script>
     <script src="/js/main.js"></script>
 </body>
 </html>
