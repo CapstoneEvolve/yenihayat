@@ -1,3 +1,6 @@
+/* Responsive Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
+
 /* do not write css that impacts the whole project - write css only for your part */
 body {
     margin: 0;
@@ -292,9 +295,6 @@ h4 i {
     order: -1;
     margin-right: 8px;
 }
-
-/* Responsive Styles */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
 
 @keyframes slideIn {
     from {
@@ -614,7 +614,7 @@ h4 i {
     }
 }
 
-/*\\ Medium devices (tablets) */
+/* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 992px) {
     body {
         font-size: 18px;
@@ -636,13 +636,13 @@ h4 i {
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
-    }  
+    }      
+}
 
-    /* Extra large devices (large desktops, min-width: 1200px) */
-    @media (min-width: 1200px) {
-        body {
-            font-size: 22px;
-            line-height: 1.6;
-        }
-    }
+/* Extra large devices (large desktops, min-width: 1200px) */
+@media (min-width: 1200px) {
+  body {
+      font-size: 22px;
+      line-height: 1.6;
+  }
 }
