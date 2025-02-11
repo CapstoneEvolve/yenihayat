@@ -3,87 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Responsive Navbar</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
+    <!-- header -->
     <header>
-      <div class="logo">
-        <a href="/index.html">
-          <img src="/images/logo.png" alt="Logo">
-        </a>
-      </div>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/logo.png" alt="Logo">
+            </a>
+        </div>
 
-      <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li class="dropdown slide">
-              <a href="#" class="dropbtn">Activities</a>
-              <div class="dropdown-content">
-                  <a class="dropdown-link" href="#activity1">Link 1</a>
-                  <a class="dropdown-link" href="#activity2">Link 2</a>
-                  <a class="dropdown-link" href="#activity3">Link 3</a>
-              </div>
-          </li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <div class="hamburger" onclick="toggleMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-      </div>
-    </nav>
-  </header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown slide">
+                    <a href="#" class="dropbtn">Activities</a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-link" href="#activity1">Link 1</a>
+                        <a class="dropdown-link" href="#activity2">Link 2</a>
+                        <a class="dropdown-link" href="#activity3">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
 
-    <section class="contact_us">
-      <div class="contain">
-          <div class="wrapper">
-            <h2>💬 Send Us a Message</h2>
-            <div class="form">
-              <form id="submit-form" action="">
-                <p>
-                  <input id="name" class="form-input" type="text" placeholder="Your Name*">
-                  <small class="name-error"></small>
-                </p>
-                <p>
-                  <input id="email" class="form-input" type="email" placeholder="Your Email*">
-                  <small class="name-error"></small>
-                </p>
-                <p class="full-width">
-                  <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
-                  <small></small>
-                </p>
-                <p class="full-width">
-                  <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
-                </p>
-              </form>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
+        </nav>
+    </header>
+    <!-- .\end header -->                
+
+    <!-- hero -->
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-slides">
+                <img src="images/y1.jpg" alt="yenihayat">
+                <div class="img-overlay">
+                    <h2>Kültür ve Sanat Derneği</h2>
+                    <h3> Halk Oyunları Ekibi - Folklor</h3>
+                    <a href="#">Read More...</a>
+                    <div class="slider-controls">
+                        <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slides">
+                <img src="images/y3.jpg" alt="yenihayat">
+                <div class="img-overlay">
+                    <h2>Kültür ve Sanat Derneği</h2>
+                    <h3>Saz Ekibi</h3>
+                    <a href="#">Read More</a>
+                    <div class="slider-controls">
+                        <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slides">
+                <img src="images/y2.jpg" alt="yenihayat">
+                <div class="img-overlay">
+                    <h2>Kültür ve Sanat Derneği</h2>
+                    <h3>Koro Ekibi</h3>
+                    <a href="#">Read More</a>
+                    <div class="slider-controls">
+                        <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination"></div>
+    </div>
+    <!-- .\end hero -->
+
+    <!-- contact us -->
+    <section class="contact_us">
+        <div class="contain">
+            <div class="wrapper">
+                <h2>💬 Send Us a Message</h2>
+                <div class="form">
+                    <form id="submit-form" action="">
+                        <p>
+                            <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p>
+                            <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                            <small class="name-error"></small>
+                        </p>
+                        <p class="full-width">
+                            <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                            <small></small>
+                        </p>
+                        <p class="full-width">
+                            <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>    
             
-            <section class="contact-section">
-              <div class="container">
-                <div class="get-in-touch">
-                  <h2>✉️ Get in Touch</h2>
-                  <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                    Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
-                  </p>
-                  <div class="social-links">
+    <section class="contact-section">
+        <div class="container">
+            <div class="get-in-touch">
+                <h2>✉️ Get in Touch</h2>
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                  Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
+                </p>
+                <div class="social-links">
                     <a href="#" class="social-link">Facebook</a>
                     <a href="#" class="social-link">Instagram</a>
-                  </div>
                 </div>
-          
-                <div class="address-info">
-                  <h2>📍 Our Address:</h2>
-                  <p><strong>1234 Street Name, City, State, ZIP Code</strong></p>
-                  <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
-                  <p>✉️ <strong>Email:</strong> info@example.com</p>
-                </div>
+            </div>
+      
+            <div class="address-info">
+                <h2>📍 Our Address:</h2>
+                <p><strong>1234 Street Name, City, State, ZIP Code</strong></p>
+                <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
+                <p>✉️ <strong>Email:</strong> info@example.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- .\end contact us -->
 
     <script src="js/main.js"></script>
 </body>
