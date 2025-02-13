@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Responsive Navbar</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -35,7 +35,6 @@
                 <li><a href="#events">Events</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -133,54 +132,59 @@
     <!-- contact us -->
     <section class="contact_us">
         <div class="contain">
-            <div class="wrapper">
-                <h2>💬 Send Us a Message</h2>
-                <div class="form">
-                    <form id="submit-form" action="">
-                        <p>
-                            <input id="name" class="form-input" type="text" placeholder="Your Name*">
-                            <small class="name-error"></small>
-                        </p>
-                        <p>
-                            <input id="email" class="form-input" type="email" placeholder="Your Email*">
-                            <small class="name-error"></small>
-                        </p>
-                        <p class="full-width">
-                            <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
-                            <small></small>
-                        </p>
-                        <p class="full-width">
-                            <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>    
-            
-    <section class="contact-section">
-        <div class="container">
-            <div class="get-in-touch">
-                <h2>✉️ Get in Touch</h2>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                  Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
-                </div>
-            </div>
-      
-            <div class="address-info">
-                <h2>📍 Our Address:</h2>
-                <p><strong>1234 Street Name, City, State, ZIP Code</strong></p>
-                <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
-                <p>✉️ <strong>Email:</strong> info@example.com</p>
-            </div>
+          <div class="wrapper">
+              <h2>💬 Send Us a Message</h2>
+              <div class="form">
+                  <form id="submit-form" action="">
+                      <p>
+                          <input id="name" name="name" class="form-input" type="text" placeholder="Your Name*" required>
+                          <small class="error-message"></small>
+                      </p>
+                      <p>
+                          <input id="email" name="email" class="form-input" type="email" placeholder="Your Email*" required>
+                          <small class="error-message"></small>
+                      </p>
+                      <p class="full-width">
+                          <textarea id="message" name="message" minlength="20" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                          <small class="error-message"></small>
+                      </p>
+                      <p class="full-width">
+                          <input type="submit" class="submit-btn" value="Submit">
+                      </p>
+                  </form>
+              </div>
+          </div>
         </div>
     </section>
+    <div id="modal-container" class="modal-overlay">
+      <div class="modal-box">
+          <span id="modal-close" class="modal-close-btn">&times;</span>
+          <p id="modal-message"></p>
+      </div>
+    </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="get-in-touch">
+          <h2>✉️ Get in Touch</h2>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+          <div class="address-info">
+            <h2>📍 Our Address:</h2>
+              <p><strong>1234 Street Name, City, State, ZIP Code</strong></p>
+              <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
+              <p>✉️ <strong>Email:</strong> info@example.com</p>
+      </div>
+    </div>
+  </section>
     <!-- .\end contact us -->    
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
