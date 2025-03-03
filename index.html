@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Responsive Navbar</title>
+    <title>Yeni Hayat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="css/index.css">
@@ -21,18 +21,17 @@
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#events">Highlights</a></li>
                 <li class="dropdown slide">
                     <a href="#" class="dropbtn">Activities</a>
                     <div class="dropdown-content">
-                        <a class="dropdown-link" href="#activity1">Link 1</a>
-                        <a class="dropdown-link" href="#activity2">Link 2</a>
-                        <a class="dropdown-link" href="#activity3">Link 3</a>
+                        <a class="dropdown-link" href="latest-news.html">Latest News</a>
+                        <a class="dropdown-link" href="activities.html">Activites Highlights</a>
+                        <a class="dropdown-link" href="upcoming-events.html">Upcoming Events</a>
                     </div>
                 </li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
             </ul>
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
@@ -44,14 +43,14 @@
     <!-- .\end header -->                
 
     <!-- hero -->
-    <div class="hero-container">
+    <div class="hero-container" id="home">
         <div class="hero-content">
             <div class="hero-slides">
                 <img src="images/y1.jpg" alt="yenihayat">
                 <div class="img-overlay">
                     <h2>Kültür ve Sanat Derneği</h2>
                     <h3> Halk Oyunları Ekibi - Folklor</h3>
-                    <a href="#">Read More...</a>
+                    <a href="about-us.html">Read More...</a>
                     <div class="slider-controls">
                         <button class="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
                         <button class="next-btn"><i class="fa-solid fa-angle-right"></i></button>
@@ -89,7 +88,7 @@
 
     <!-- highlights -->
 
-    <div class="highlight_section">
+    <div class="highlight_section" id="events">
         <div class="highlights_sections">
             <div class="banner-image">
                 <img src="images/logo-about.png" alt="">
@@ -128,10 +127,13 @@
     <!-- .\end highlights -->
 
     <!-- contact us -->
-    <section class="contact_us">
+    <section class="contact_us" id="contact">
         <div class="contain">
             <div class="wrapper">
-                <h2>💬 Send Us a Message</h2>
+                <h2 class="wrapper-title"><i class="fa-solid fa-comment-dots"></i> Send Us a Message</h2>
+                <p class="wrapper-paragraph">
+                    Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
+                </p>
                 <div class="form">
                     <form id="submit-form" action="">
                         <p>
@@ -154,28 +156,52 @@
             </div>
         </div>
     </section>
-
-    <section class="contact-section">
+    <!-- .\end contact us -->
+     
+    <!-- footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="get-in-touch">
-                <h2>✉️ Get in Touch</h2>
-                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                    Contact us for new projects and collaboration opportunities. We are excited to grow together with you. Contact us, we are always here to provide you with the best service. Your satisfaction is our top priority.
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link">Facebook</a>
-                    <a href="#" class="social-link">Instagram</a>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>YENI HAYAT</h2>
+                    <p>Building the future with creativity.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tetovo</p>
+                    <p><i class="fas fa-envelope"></i> contact@yenihayat.com</p>
+                    <p><i class="fas fa-phone"></i> +389 71 456 789</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#events">Highlights</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe</h2>
+                    <p>Get the latest updates and offers.</p>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section social">
+                    <h2>Follow Us</h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="address-info">
-                <h2>📍 Our Address:</h2>
-                <p><strong>1234 Street Name, City, State, ZIP Code</strong></p>
-                <p>📞 <strong>Phone:</strong> (123) 456-7890</p>
-                <p>✉️ <strong>Email:</strong> info@example.com</p>
+            <div class="footer-bottom">
+                © 2025 CAPSTONE. All Rights Reserved.
             </div>
         </div>
-    </section> 
-    <!-- .\end contact us -->    
+    </footer>
+    <!-- end footer -->
     
     <script src="js/main.js"></script>
 </body>
