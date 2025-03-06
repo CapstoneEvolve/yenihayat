@@ -282,7 +282,7 @@ header {
     margin: 15px;
     background-color: white;
     width: 100%; 
-    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 25px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
     animation-name: fadeInDown;
@@ -354,7 +354,7 @@ header {
 }
 
 .contain {
-    width: 79.5%;
+    width: 83%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -378,7 +378,7 @@ header {
     border: 1px solid rgb(219, 216, 216);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 25px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
     flex: 1 1 60%;
 }
 
@@ -691,7 +691,7 @@ header {
     
     .highlights_sections { 
         width: 85%;
-        margin: 10px;
+        margin: 3.5%;
     }
 
     .activities_container {
@@ -709,6 +709,10 @@ header {
     
     .activities_img {
         margin-right: 0px;
+    }
+
+    .contain {
+        width: 100%;
     }
 
     .aboutus-header {
@@ -911,6 +915,10 @@ header {
 
     .contact_us .email-info i, .contact_us .contacts i {
         margin-right: 8px;
+    }
+
+    .contain {
+        width: 90%;
     }
 
     .aboutus-header {
