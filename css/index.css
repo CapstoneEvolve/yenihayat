@@ -19,7 +19,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 3;
-} 
+}
 
 .logo img {
     height: 70px;
@@ -542,7 +542,7 @@ header {
     color: white;
     text-align: center;
     padding: 35px 20px;
-    font-size: 2rem;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -587,6 +587,43 @@ header {
     border-radius: 8px;
     text-align: center;
 }
+/* about us end */
+
+/* Gallery */
+.gallery-title {
+    background:  rgb(166, 44, 44);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 75px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.gallery img {
+    width: 23%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ensures images stay square */
+    object-fit: cover; /* Ensures the image fills the square without distortion */
+}
+
+.gallery-images-title {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-top: 90px;
+    margin-bottom: 45px
+}
+/* Gallery end */
 
 /* Responsive Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
@@ -728,6 +765,10 @@ header {
     .aboutus-text {
         font-size: 1.1em;
         text-align: start;
+    }
+
+    .gallery img {
+        width: calc(90% - 10px);
     }
 }
 
@@ -935,6 +976,10 @@ header {
         font-size: 1.1em;
         text-align: start;
     }
+
+    .gallery img {
+        width: calc(48% - 15px);
+    }
 }
 
 /*\\ Medium devices (tablets) */
@@ -970,6 +1015,10 @@ header {
     .activities_img {
         flex: 1 1 100%; 
         margin-right: 0px;
+    }
+
+        .gallery img {
+        width: calc(32% - 10px);
     }
 }  
 
