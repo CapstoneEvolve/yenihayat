@@ -552,7 +552,7 @@ header {
     padding: 40px 20px;
     border-radius: 10px;
     margin-top: -30px;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutus-section {
@@ -561,8 +561,15 @@ header {
     border-radius: 8px;
 }
 
-.aboutus-title {
+.aboutus-main-title {
     font-size: 1.7em;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+}
+
+.aboutus-title {
+    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 10px;
     color:  rgb(166, 44, 44);
@@ -572,20 +579,6 @@ header {
     font-size: 1.3em;
     line-height: 1.6;
     color: #ffffff;
-}
-
-.aboutus-columns {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.aboutus-column {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
 }
 
 /* Responsive Styles */
