@@ -70,13 +70,14 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 140px;
+    width: 200px;
     z-index: 1;
     opacity: 0;
     transform: translateX(-20px);
     transition: all 0.3s ease; 
     border-radius: 10px;
     margin-top: 7px;
+    white-space: nowrap;
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,8 +90,9 @@ header {
     display: block;
     color: white;
     padding: 10px;
+    text-align: ;
     text-decoration: none;
-    font-size: 0.875em;
+    font-size: 0.780em;
     color: rgb(166, 44, 44);
 }
 
