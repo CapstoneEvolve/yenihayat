@@ -692,7 +692,7 @@ header {
     
     .highlights_sections { 
         width: 85%;
-        margin: 3.5%;
+        margin: 2.0% auto;
     }
 
     .activities_container {
@@ -826,12 +826,14 @@ header {
     }
 
     .highlight_section {
-        flex-direction: column;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .highlights_sections { 
         width: 85%; 
-        margin: 4.5%;
+        margin: 3.5%;
     }
     
     .activities_container {
