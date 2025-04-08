@@ -561,7 +561,7 @@ header {
     padding: 40px 20px;
     border-radius: 10px;
     margin-top: -30px;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutus-section {
@@ -570,8 +570,15 @@ header {
     border-radius: 8px;
 }
 
-.aboutus-title {
+.aboutus-main-title {
     font-size: 1.7em;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+}
+
+.aboutus-title {
+    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 10px;
     color:  rgb(166, 44, 44);
@@ -621,8 +628,8 @@ header {
 .gallery img {
     width: 23%;
     height: auto;
-    aspect-ratio: 1 / 1; /* Ensures images stay square */
-    object-fit: cover; /* Ensures the image fills the square without distortion */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .gallery-images-title {
