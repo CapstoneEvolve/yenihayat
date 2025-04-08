@@ -656,90 +656,6 @@ header {
 }
 /* .\end contact us */
 
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-form {
-    background: linear-gradient(90deg, rgba(169, 169, 169, 0) 30%, rgba(188, 187, 187, 0.3) 100%);
-    padding: 30px;
-    border: 2px solid rgb(236, 222, 222);
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24); 
-    width: 100%;
-    max-width: 400px;
-    font-family: 'Arial', sans-serif;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-    color: #3d3d3d;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 1rem;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 94.2%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.form-group input:hover,
-.form-group textarea:hover {
-    border-color: rgba(47, 79, 79, 0.9);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: rgba(47, 79, 79, 0.9);
-    box-shadow: 0 0 5px rgba(47, 79, 79, 0.9);
-}
-
-textarea {
-    resize: none;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    background: rgba(47, 79, 79, 0.9);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background: rgba(40, 58, 58, 0.9); 
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
 /* Extra small devices (phones, portrait mode) */
 @media (max-width: 576px) {
     body {
@@ -873,11 +789,6 @@ button:active {
 
     .gallery img {
         width: calc(90% - 10px);
-    }
-
-    form {
-        width: 70%;
-        height: 400px;
     }
 }
 
@@ -1094,11 +1005,6 @@ button:active {
 
     .gallery img {
         width: calc(48% - 15px);
-    }
-
-    form {
-        width: 70%;
-        height: 500px;
     }
 }
 
