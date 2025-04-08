@@ -19,10 +19,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 3;
-} 
+}
 
 .logo img {
-    height: 70px;
+    height: 90px;
     margin: 0 auto;
     display: block;
 }
@@ -70,13 +70,14 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 140px;
+    width: 200px;
     z-index: 1;
     opacity: 0;
     transform: translateX(-20px);
     transition: all 0.3s ease; 
     border-radius: 10px;
     margin-top: 7px;
+    white-space: nowrap;
 }
 
 .dropdown:hover .dropdown-content {
@@ -89,8 +90,9 @@ header {
     display: block;
     color: white;
     padding: 10px;
+    text-align: start;
     text-decoration: none;
-    font-size: 0.875em;
+    font-size: 0.780em;
     color: rgb(166, 44, 44);
 }
 
@@ -219,6 +221,12 @@ header {
     background-color: #691111;
 }
 
+.img-overlay h1 {
+    font-size: 2.3em;
+    margin-bottom: -95px;
+    color: rgb(166, 44, 44);
+}
+
 .img-overlay h2 {
     font-size: 2.3em;
     margin-bottom: -30px;
@@ -231,13 +239,13 @@ header {
     color: rgb(166, 44, 44);
 }
 
-.img-overlay h2, .img-overlay h3, .img-overlay a, .slider-controls button {
+.img-overlay h1, .img-overlay h2, .img-overlay h3, .img-overlay a, .slider-controls button {
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 1s ease-out forwards;
 }
 
-.img-overlay h2, .img-overlay h3, .img-overlay a, .slider-controls button {
+.img-overlay h1, .img-overlay h2, .img-overlay h3, .img-overlay a, .slider-controls button {
     animation-delay: 0.1s;
 }
 
@@ -284,7 +292,7 @@ header {
     background-color: white;
     width: 100%; 
     box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: box-shadow 0.3s ease-in-out;
     animation-name: fadeInDown;
     animation-iteration-count: 1;
@@ -543,7 +551,7 @@ header {
     color: white;
     text-align: center;
     padding: 35px 20px;
-    font-size: 2rem;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -553,7 +561,7 @@ header {
     padding: 40px 20px;
     border-radius: 10px;
     margin-top: -30px;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutus-section {
@@ -562,8 +570,15 @@ header {
     border-radius: 8px;
 }
 
-.aboutus-title {
+.aboutus-main-title {
     font-size: 1.7em;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+}
+
+.aboutus-title {
+    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 10px;
     color:  rgb(166, 44, 44);
@@ -588,6 +603,43 @@ header {
     border-radius: 8px;
     text-align: center;
 }
+/* about us end */
+
+/* Gallery */
+.gallery-title {
+    background:  rgb(166, 44, 44);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 75px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.gallery img {
+    width: 23%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery-images-title {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-top: 90px;
+    margin-bottom: 45px
+}
+/* Gallery end */
 
 /* Responsive Styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
@@ -677,7 +729,11 @@ header {
         gap: 60px;
     }
 
-    .img-overlay h2, .img-overlay h3 {
+    .img-overlay h1 {
+        margin-bottom: -75px;
+    }
+
+    .img-overlay h1, .img-overlay h2, .img-overlay h3 {
         font-size: 1.5em;
     }
 
@@ -692,7 +748,7 @@ header {
     
     .highlights_sections { 
         width: 85%;
-        margin: 3.5%;
+        margin: 2.0% auto;
     }
 
     .activities_container {
@@ -729,6 +785,10 @@ header {
     .aboutus-text {
         font-size: 1.1em;
         text-align: start;
+    }
+
+    .gallery img {
+        width: calc(90% - 10px);
     }
 }
 
@@ -816,7 +876,11 @@ header {
         gap: 60px;
     }
 
-    .img-overlay h2, .img-overlay h3 {
+    .img-overlay h1 {
+        margin-bottom: -80px;
+    }
+
+    .img-overlay h1, .img-overlay h2, .img-overlay h3 {
         font-size: 2em;
     }
 
@@ -826,12 +890,14 @@ header {
     }
 
     .highlight_section {
-        flex-direction: column;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .highlights_sections { 
         width: 85%; 
-        margin: 4.5%;
+        margin: 3.5%;
     }
     
     .activities_container {
@@ -936,6 +1002,10 @@ header {
         font-size: 1.1em;
         text-align: start;
     }
+
+    .gallery img {
+        width: calc(48% - 15px);
+    }
 }
 
 /*\\ Medium devices (tablets) */
@@ -971,6 +1041,26 @@ header {
     .activities_img {
         flex: 1 1 100%; 
         margin-right: 0px;
+    }
+
+    .img-overlay h1 {
+        font-size: 2.3em;
+        margin-bottom: -65px;
+    }
+    
+    .img-overlay h2 {
+        font-size: 2.3em;
+        margin-bottom: -15px;
+    }
+    
+    .img-overlay h3 {
+        font-size: 2.3em;
+        margin-top: -25px;
+        margin-bottom: -30px; 
+    }
+
+    .gallery img {
+        width: calc(32% - 10px);
     }
 }  
 
