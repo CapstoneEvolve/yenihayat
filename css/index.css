@@ -292,7 +292,7 @@ header {
     background-color: white;
     width: 100%; 
     box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
-    /* cursor: pointer; */
+    height: 450px;
     transition: box-shadow 0.3s ease-in-out;
     animation-name: fadeInDown;
     animation-iteration-count: 1;
@@ -305,7 +305,8 @@ header {
 }
     
 .banner-image i {
-    font-size: 250%;
+    font-size: 350%;
+    margin-top: 5%;
 }
     
 .highlight_title {
@@ -314,7 +315,7 @@ header {
     color: #333;
     font-size: 1.25em;
     color: rgb(166, 44, 44);
-
+    margin-top: 50px;
 }
     
 .highlight_paragraph {
@@ -326,11 +327,10 @@ header {
     -webkit-box-orient: vertical;    
     overflow: hidden;                 
     text-overflow: ellipsis;     
-    margin-bottom: 27px;
 }
   
 .highlight_button {
-    margin-bottom: 15px;
+    margin-top: 50px;
 }
   
 .highlight_button a {
@@ -746,6 +746,20 @@ header {
     .highlights_sections { 
         width: 85%;
         margin: 2.0% auto;
+        height: 380px;
+    }
+
+    .highlight_paragraph {
+        font-size: 1.400em;
+    }
+
+    .highlight_title {
+        font-size: 2.000em;
+        margin-top: 10px;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
     }
 
     .activities_container {
@@ -895,8 +909,21 @@ header {
     .highlights_sections { 
         width: 85%; 
         margin: 3.5%;
+        height: 360px;
     }
-    
+
+    .highlight_paragraph {
+        font-size: 1.500em;
+    }
+
+    .highlight_title {
+        font-size: 1.850em;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
+    }
+
     .activities_container {
         width: 99%;
         flex-wrap: wrap !important;  
@@ -1017,7 +1044,21 @@ header {
 
     .highlights_sections { 
         width: 35%;
-        margin: 10px; 
+        margin: 10px;
+        height: 330px; 
+    }
+
+    .highlight_title {
+        font-size: 1.850em;
+        margin-top: 10px;
+    }
+
+    .highlight_paragraph {
+        font-size: 1.300em;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
     }
 
     .activities_container {
@@ -1074,7 +1115,13 @@ header {
     .highlights_sections { 
         width: 22%; 
         margin: 10px; 
+        height: 480px;
     } 
+
+    .highlight_title {
+        margin-top: 20px;
+    }
+
 } 
  
 /* Extra large devices (large desktops) */
@@ -1090,5 +1137,10 @@ header {
     .highlights_sections { 
         width: 23%; 
         margin: 10px; 
+        height: 500px;
+    }
+
+    .highlight_paragraph {
+        font-size: 22px;
     }
 }
