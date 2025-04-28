@@ -744,7 +744,7 @@ header {
     }
     
     .highlights_sections { 
-        width: 85%;
+        width: 65%;
         margin: 2.0% auto;
         height: 380px;
     }
@@ -907,9 +907,9 @@ header {
     }
     
     .highlights_sections { 
-        width: 85%; 
+        width: 55%; 
         margin: 3.5%;
-        height: 360px;
+        height: 400px;
     }
 
     .highlight_paragraph {
@@ -923,7 +923,7 @@ header {
     .banner-image {
         font-size: 1.300em;
     }
-
+    
     .activities_container {
         width: 99%;
         flex-wrap: wrap !important;  
@@ -1121,7 +1121,6 @@ header {
     .highlight_title {
         margin-top: 20px;
     }
-
 } 
  
 /* Extra large devices (large desktops) */
