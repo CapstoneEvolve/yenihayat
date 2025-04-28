@@ -285,12 +285,16 @@ header {
 }
   
 .highlights_sections {
+    display: flex;              /* add */
+    flex-direction: column;     /* add */
+    justify-content: space-between; /* optional */
+    align-items: center;        /* optional, center content horizontally */
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);  
-    padding: 20px;  
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 20px 40px 20px;
     margin: 15px;
     background-color: white;
-    width: 100%; 
+    width: 100%;
     box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
     height: 450px;
     transition: box-shadow 0.3s ease-in-out;
@@ -310,9 +314,7 @@ header {
 }
     
 .highlight_title {
-    color: rgba(255,255,255,0.98);
     text-align: center;
-    color: #333;
     font-size: 1.25em;
     color: rgb(166, 44, 44);
     margin-top: 50px;
@@ -330,12 +332,12 @@ header {
 }
   
 .highlight_button {
-    margin-top: 50px;
+    margin-top: auto;
 }
   
 .highlight_button a {
     width: 20%;
-    padding: 15px;
+    padding: 12px;
     font-size: 1em;
     cursor: pointer;
     border-radius: 12px;
@@ -504,34 +506,6 @@ header {
 .social-icons a:hover {
     color: #fff;
     transform: scale(1.2);
-}
-  
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-  
-.newsletter input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-  
-.newsletter button {
-    padding: 10px;
-    background: rgb(166, 44, 44);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.newsletter button:hover {
-    background: rgb(104, 27, 27);
-
 }
   
 .footer-bottom {
@@ -1121,7 +1095,6 @@ header {
     .highlight_title {
         margin-top: 20px;
     }
-
 } 
  
 /* Extra large devices (large desktops) */
