@@ -285,14 +285,18 @@ header {
 }
   
 .highlights_sections {
+    display: flex;              /* add */
+    flex-direction: column;     /* add */
+    justify-content: space-between; /* optional */
+    align-items: center;        /* optional, center content horizontally */
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);  
-    padding: 20px;  
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 20px 40px 20px;
     margin: 15px;
     background-color: white;
-    width: 100%; 
+    width: 100%;
     box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 25px;
-    /* cursor: pointer; */
+    height: 450px;
     transition: box-shadow 0.3s ease-in-out;
     animation-name: fadeInDown;
     animation-iteration-count: 1;
@@ -304,19 +308,16 @@ header {
     box-shadow: rgba(255, 255, 255, 0.6) 0px 5px 15px;
 }
     
-.banner-image img {
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255, 0.255)
+.banner-image i {
+    font-size: 350%;
+    margin-top: 5%;
 }
     
 .highlight_title {
-    color: rgba(255,255,255,0.98);
     text-align: center;
-    color: #333;
     font-size: 1.25em;
     color: rgb(166, 44, 44);
-
+    margin-top: 50px;
 }
     
 .highlight_paragraph {
@@ -328,16 +329,15 @@ header {
     -webkit-box-orient: vertical;    
     overflow: hidden;                 
     text-overflow: ellipsis;     
-    margin-bottom: 27px;
 }
   
 .highlight_button {
-    margin-bottom: 15px;
+    margin-top: auto;
 }
   
 .highlight_button a {
     width: 20%;
-    padding: 15px;
+    padding: 12px;
     font-size: 1em;
     cursor: pointer;
     border-radius: 12px;
@@ -506,35 +506,6 @@ header {
 .social-icons a:hover {
     color: #fff;
     transform: scale(1.2);
-}
-  
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-  
-.newsletter input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-  
-.newsletter button {
-    padding: 10px;
-    background: rgb(166, 44, 44);
-
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.newsletter button:hover {
-    background: rgb(104, 27, 27);
-
 }
   
 .footer-bottom {
@@ -749,6 +720,20 @@ header {
     .highlights_sections { 
         width: 85%;
         margin: 2.0% auto;
+        height: 380px;
+    }
+
+    .highlight_paragraph {
+        font-size: 1.400em;
+    }
+
+    .highlight_title {
+        font-size: 2.000em;
+        margin-top: 10px;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
     }
 
     .activities_container {
@@ -898,8 +883,21 @@ header {
     .highlights_sections { 
         width: 85%; 
         margin: 3.5%;
+        height: 360px;
     }
-    
+
+    .highlight_paragraph {
+        font-size: 1.500em;
+    }
+
+    .highlight_title {
+        font-size: 1.850em;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
+    }
+
     .activities_container {
         width: 99%;
         flex-wrap: wrap !important;  
@@ -1020,7 +1018,21 @@ header {
 
     .highlights_sections { 
         width: 35%;
-        margin: 10px; 
+        margin: 10px;
+        height: 330px; 
+    }
+
+    .highlight_title {
+        font-size: 1.850em;
+        margin-top: 10px;
+    }
+
+    .highlight_paragraph {
+        font-size: 1.300em;
+    }
+
+    .banner-image {
+        font-size: 1.300em;
     }
 
     .activities_container {
@@ -1077,7 +1089,12 @@ header {
     .highlights_sections { 
         width: 22%; 
         margin: 10px; 
+        height: 480px;
     } 
+
+    .highlight_title {
+        margin-top: 20px;
+    }
 } 
  
 /* Extra large devices (large desktops) */
@@ -1093,5 +1110,10 @@ header {
     .highlights_sections { 
         width: 23%; 
         margin: 10px; 
+        height: 500px;
+    }
+
+    .highlight_paragraph {
+        font-size: 22px;
     }
 }
