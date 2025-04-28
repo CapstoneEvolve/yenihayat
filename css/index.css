@@ -746,20 +746,25 @@ header {
     .highlights_sections { 
         width: 65%;
         margin: 2.0% auto;
-        height: 380px;
+        height: 350px;
     }
 
     .highlight_paragraph {
-        font-size: 1.400em;
+        font-size: 1.200em;
+        margin-bottom: 20px;
     }
 
     .highlight_title {
-        font-size: 2.000em;
-        margin-top: 10px;
+        font-size: 1.800em;
+        margin-top: 2px;
+    }
+
+    .highlight_button {
+        margin-top: 35px;
     }
 
     .banner-image {
-        font-size: 1.300em;
+        font-size: 1.200em;
     }
 
     .activities_container {
@@ -909,7 +914,7 @@ header {
     .highlights_sections { 
         width: 55%; 
         margin: 3.5%;
-        height: 400px;
+        height: 380px;
     }
 
     .highlight_paragraph {
@@ -918,6 +923,11 @@ header {
 
     .highlight_title {
         font-size: 1.850em;
+        margin: 15px;
+    }
+
+    .highlight_button {
+        margin-top: 40px;
     }
 
     .banner-image {
@@ -1045,20 +1055,20 @@ header {
     .highlights_sections { 
         width: 35%;
         margin: 10px;
-        height: 330px; 
+        height: 250px; 
     }
 
     .highlight_title {
-        font-size: 1.850em;
+        font-size: 1.450em;
         margin-top: 10px;
     }
 
     .highlight_paragraph {
-        font-size: 1.300em;
+        font-size: 1.200em;
     }
 
     .banner-image {
-        font-size: 1.300em;
+        font-size: 1.100em;
     }
 
     .activities_container {
