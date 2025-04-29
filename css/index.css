@@ -285,10 +285,10 @@ header {
 }
   
 .highlights_sections {
-    display: flex;              /* add */
-    flex-direction: column;     /* add */
-    justify-content: space-between; /* optional */
-    align-items: center;        /* optional, center content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 20px 20px 40px 20px;
@@ -732,6 +732,10 @@ header {
         margin-top: 10px;
     }
 
+    .hero-slides::before {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.949) 0%, rgba(0, 0, 0, 0.896) 20%, transparent 100%);
+    }
+
     .banner-image {
         font-size: 1.300em;
     }
@@ -892,6 +896,10 @@ header {
 
     .highlight_title {
         font-size: 1.850em;
+    }
+
+    .hero-slides::before {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.949) 0%, rgba(0, 0, 0, 0.896) 20%, transparent 100%);
     }
 
     .banner-image {
