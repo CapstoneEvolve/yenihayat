@@ -776,6 +776,11 @@ header {
         text-align: start;
     }
 
+    .gallery-images-title {
+        width: 80%;
+        margin-left: 6%;
+    }
+
     .gallery img {
         width: calc(90% - 10px);
     }
@@ -1007,6 +1012,11 @@ header {
     .aboutus-text {
         font-size: 1.1em;
         text-align: start;
+    }
+
+    .gallery-images-title {
+        width: 80%;
+        margin-left: 4%;
     }
 
     .gallery img {
