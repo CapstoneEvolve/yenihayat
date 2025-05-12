@@ -1029,6 +1029,10 @@ header {
     body {
         font-size: 0.76em;
     }
+
+    .nav-links {
+        font-size: 0.8em;
+    }
         
     .highlight_section {
         flex-direction: row; 
@@ -1098,7 +1102,11 @@ header {
 @media (min-width: 992px) and (max-width: 1200px) {
     body {
         font-size: 20px;
-    }  
+    }
+
+    .nav-links {
+        font-size: 0.7em;
+    }
     
     .highlight_section {
         flex-direction: row; 
@@ -1119,7 +1127,11 @@ header {
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
-    }  
+    }
+
+    .nav-links {
+        font-size: 0.7em;
+    }
 
     .highlight_section {
         flex-direction: row; 
