@@ -70,7 +70,6 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 200px;
     z-index: 1;
     opacity: 0;
     transform: translateX(-20px);
@@ -315,7 +314,7 @@ header {
     
 .highlight_title {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: rgb(166, 44, 44);
     margin-top: 50px;
 }
@@ -724,12 +723,13 @@ header {
     }
 
     .highlight_paragraph {
-        font-size: 1.400em;
+        font-size: 1.42em;
+        margin-top: 4%;
     }
 
     .highlight_title {
-        font-size: 2.000em;
-        margin-top: 10px;
+        font-size: 1.5em;
+        margin-top: 8%;
     }
 
     .hero-slides::before {
@@ -900,7 +900,7 @@ header {
     }
 
     .highlight_title {
-        font-size: 1.850em;
+        font-size: 1.50em;
     }
 
     .hero-slides::before {
@@ -1041,12 +1041,12 @@ header {
     }
 
     .highlight_title {
-        font-size: 1.850em;
+        font-size: 1.6em;
         margin-top: 10px;
     }
 
     .highlight_paragraph {
-        font-size: 1.300em;
+        font-size: 1.500em;
     }
 
     .banner-image {
@@ -1132,6 +1132,7 @@ header {
     }
 
     .highlight_paragraph {
-        font-size: 22px;
+        margin-bottom: 14%;
+        font-size: 1em;
     }
 }
