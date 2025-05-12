@@ -159,10 +159,12 @@ function formatArticleDate(publishDate) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const articles = [
-        { id: 'article1-time', date: '2025-02-06T22:09:00' },
-        { id: 'article2-time', date: '2025-02-06T22:08:00' },
-        { id: 'article3-time', date: '2025-02-06T20:54:00' },
-        { id: 'article4-time', date: '2025-02-06T19:30:00' }
+        { id: 'article1-time', date: '2025-05-11T07:30:00' },
+        { id: 'article2-time', date: '2025-05-10T02:37:00' },
+        { id: 'article3-time', date: '2025-05-12T06:00:00' },
+        { id: 'article4-time', date: '2025-05-11T02:00:00' },
+        { id: 'article5-time', date: '2025-05-12T08:07:00' },
+        { id: 'article6-time', date: '2025-05-10T01:07:00' }
     ];
 
     articles.forEach(article => {

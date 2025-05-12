@@ -70,7 +70,6 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    width: 200px;
     z-index: 1;
     opacity: 0;
     transform: translateX(-20px);
@@ -315,7 +314,7 @@ header {
     
 .highlight_title {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.15em;
     color: rgb(166, 44, 44);
     margin-top: 50px;
 }
@@ -724,17 +723,15 @@ header {
     }
 
     .highlight_paragraph {
+        font-size: 1.42em;
+        margin-top: 4%;
         font-size: 1.200em;
         margin-bottom: 20px;
     }
 
     .highlight_title {
-        font-size: 1.800em;
-        margin-top: 2px;
-    }
-
-    .highlight_button {
-        margin-top: 35px;
+        font-size: 2.000em;
+        margin-top: 10px;
     }
 
     .hero-slides::before {
@@ -779,6 +776,11 @@ header {
     .aboutus-text {
         font-size: 1.1em;
         text-align: start;
+    }
+
+    .gallery-images-title {
+        width: 80%;
+        margin-left: 6%;
     }
 
     .gallery img {
@@ -901,11 +903,6 @@ header {
 
     .highlight_title {
         font-size: 1.850em;
-        margin: 15px;
-    }
-
-    .highlight_button {
-        margin-top: 40px;
     }
 
     .hero-slides::before {
@@ -1019,6 +1016,11 @@ header {
         text-align: start;
     }
 
+    .gallery-images-title {
+        width: 80%;
+        margin-left: 4%;
+    }
+
     .gallery img {
         width: calc(48% - 15px);
     }
@@ -1028,6 +1030,10 @@ header {
 @media (min-width: 768px) and (max-width: 992px) {
     body {
         font-size: 0.76em;
+    }
+
+    .nav-links {
+        font-size: 0.8em;
     }
         
     .highlight_section {
@@ -1041,12 +1047,12 @@ header {
     }
 
     .highlight_title {
-        font-size: 1.450em;
+        font-size: 1.850em;
         margin-top: 10px;
     }
 
     .highlight_paragraph {
-        font-size: 1.200em;
+        font-size: 1.300em;
     }
 
     .banner-image {
@@ -1098,7 +1104,11 @@ header {
 @media (min-width: 992px) and (max-width: 1200px) {
     body {
         font-size: 20px;
-    }  
+    }
+
+    .nav-links {
+        font-size: 0.7em;
+    }
     
     .highlight_section {
         flex-direction: row; 
@@ -1119,7 +1129,11 @@ header {
 @media (min-width: 1200px) {
     body {
         font-size: 22px;
-    }  
+    }
+
+    .nav-links {
+        font-size: 0.7em;
+    }
 
     .highlight_section {
         flex-direction: row; 
@@ -1132,6 +1146,7 @@ header {
     }
 
     .highlight_paragraph {
-        font-size: 22px;
+        margin-bottom: 14%;
+        font-size: 1em;
     }
 }
