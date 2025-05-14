@@ -222,13 +222,13 @@ header {
 
 .img-overlay h1 {
     font-size: 2.3em;
-    margin-bottom: -105px;
+    margin-bottom: -95px;
     color: rgb(166, 44, 44);
 }
 
 .img-overlay h2 {
     font-size: 2.3em;
-    margin-bottom: -40px;
+    margin-bottom: -30px;
 }
 
 .img-overlay h3 {
@@ -721,21 +721,19 @@ header {
     }
     
     .highlights_sections { 
-        width: 65%;
+        width: 85%;
         margin: 2.0% auto;
-        height: 350px;
+        height: 380px;
     }
 
     .highlight_paragraph {
         font-size: 1.42em;
         margin-top: 4%;
-        font-size: 1.200em;
-        margin-bottom: 20px;
     }
 
     .highlight_title {
-        font-size: 2.000em;
-        margin-top: 10px;
+        font-size: 1.5em;
+        margin-top: 8%;
     }
 
     .hero-slides::before {
@@ -743,7 +741,7 @@ header {
     }
 
     .banner-image {
-        font-size: 1.200em;
+        font-size: 1.300em;
     }
 
     .activities_container {
@@ -896,9 +894,9 @@ header {
     }
     
     .highlights_sections { 
-        width: 55%; 
+        width: 85%; 
         margin: 3.5%;
-        height: 380px;
+        height: 360px;
     }
 
     .highlight_paragraph {
@@ -906,7 +904,7 @@ header {
     }
 
     .highlight_title {
-        font-size: 1.850em;
+        font-size: 1.50em;
     }
 
     .hero-slides::before {
@@ -916,7 +914,7 @@ header {
     .banner-image {
         font-size: 1.300em;
     }
-    
+
     .activities_container {
         width: 99%;
         flex-wrap: wrap !important;  
@@ -1047,20 +1045,20 @@ header {
     .highlights_sections { 
         width: 35%;
         margin: 10px;
-        height: 250px; 
+        height: 330px; 
     }
 
     .highlight_title {
-        font-size: 1.850em;
+        font-size: 1.6em;
         margin-top: 10px;
     }
 
     .highlight_paragraph {
-        font-size: 1.300em;
+        font-size: 1.500em;
     }
 
     .banner-image {
-        font-size: 1.100em;
+        font-size: 1.300em;
     }
 
     .activities_container {
