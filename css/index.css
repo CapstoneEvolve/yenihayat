@@ -721,19 +721,21 @@ header {
     }
     
     .highlights_sections { 
-        width: 85%;
+        width: 65%;
         margin: 2.0% auto;
-        height: 380px;
+        height: 350px;
     }
 
     .highlight_paragraph {
         font-size: 1.42em;
         margin-top: 4%;
+        font-size: 1.200em;
+        margin-bottom: 20px;
     }
 
     .highlight_title {
-        font-size: 1.5em;
-        margin-top: 8%;
+        font-size: 2.000em;
+        margin-top: 10px;
     }
 
     .hero-slides::before {
@@ -741,7 +743,7 @@ header {
     }
 
     .banner-image {
-        font-size: 1.300em;
+        font-size: 1.200em;
     }
 
     .activities_container {
@@ -894,9 +896,9 @@ header {
     }
     
     .highlights_sections { 
-        width: 85%; 
+        width: 55%; 
         margin: 3.5%;
-        height: 360px;
+        height: 380px;
     }
 
     .highlight_paragraph {
@@ -904,7 +906,7 @@ header {
     }
 
     .highlight_title {
-        font-size: 1.50em;
+        font-size: 1.850em;
     }
 
     .hero-slides::before {
@@ -914,7 +916,7 @@ header {
     .banner-image {
         font-size: 1.300em;
     }
-
+    
     .activities_container {
         width: 99%;
         flex-wrap: wrap !important;  
@@ -1045,20 +1047,20 @@ header {
     .highlights_sections { 
         width: 35%;
         margin: 10px;
-        height: 330px; 
+        height: 250px; 
     }
 
     .highlight_title {
-        font-size: 1.6em;
+        font-size: 1.850em;
         margin-top: 10px;
     }
 
     .highlight_paragraph {
-        font-size: 1.500em;
+        font-size: 1.300em;
     }
 
     .banner-image {
-        font-size: 1.300em;
+        font-size: 1.100em;
     }
 
     .activities_container {
