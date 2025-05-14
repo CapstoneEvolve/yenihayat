@@ -14,7 +14,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    height: 70px;
+    height: 80px;
     padding: 15px 20px;
     position: sticky;
     top: 0;
@@ -45,7 +45,7 @@ header {
 .nav-links li {
     margin: 0 5px;
     text-align: center;
-    font-size: 1.150em;
+    font-size: 1.4em;
 }
 
 .nav-links a {
@@ -196,7 +196,7 @@ header {
     color: black;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -222,13 +222,13 @@ header {
 
 .img-overlay h1 {
     font-size: 2.3em;
-    margin-bottom: -95px;
+    margin-bottom: -105px;
     color: rgb(166, 44, 44);
 }
 
 .img-overlay h2 {
     font-size: 2.3em;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
 }
 
 .img-overlay h3 {
@@ -513,6 +513,10 @@ header {
     border-top: 1px solid #444;
     font-size: 14px;
     color: #bbb;
+}
+
+.icon-footer {
+    width: 20px;
 }
 
 /* about us */
